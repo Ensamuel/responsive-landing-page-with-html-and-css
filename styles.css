@@ -1,0 +1,157 @@
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+    overflow: hidden;
+    font-family: sans-serif;
+}
+
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    width: 30px;
+    display: none;
+}
+
+.logo{
+    width: 100px;
+    cursor: pointer;
+    margin: 10px 0;
+}
+
+nav{
+    text-align: right;
+    flex: 1;
+}
+
+
+nav ul li{
+    display: inline-block;
+    margin-right:30px ;
+    list-style: none;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+}
+
+nav ul li a:hover{
+    color: green;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 50px;
+}
+
+button{
+    width: 140px;
+    padding: 12px 10px;
+    border: 0;
+    outline: none;
+    color: white;
+    background: linear-gradient(to right, purple, pink);
+    cursor: pointer;
+    transition: width 0.5s;
+    border-radius: 50px;
+
+}
+
+button img{
+    height: 20px;
+    display: none;
+}
+
+button:hover img{
+    display:block;
+}
+
+button:hover{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 160px;
+}
+
+.col-2{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+
+.social img{
+    height: 15px;
+    width: 15px;
+}
+
+.social{
+    text-align: center;
+    cursor: pointer;
+}
+
+@media only screen and (max-width:700px) {
+    
+    nav ul{
+        width: 100%;
+        background:linear-gradient(to right, purple, pink) ;
+        position: absolute;
+        top: 75px;
+        right: 0;
+        text-align: center;
+    }
+
+    nav ul li{
+        display: block;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    .nav{
+        display: block;
+    }
+
+    #menuList{
+        overflow: hidden;
+        transition: 0.5s;
+    }
+
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px o;
+    }
+
+    .col-2{
+        flex-basis: 100%;
+        margin-bottom: 1px;
+    }
+
+    .col-2 .controller{
+        width: 90%;
+    }
+
+    .col-1{
+        flex-basis: 100%;
+        text-align: center;
+        margin: 0 25px;
+        
+    }
+
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    
+    <div class="container">
+        <div class="navbar">
+
+            <img src="img/Designer _Outline.png" alt="" class="logo">
+
+            <nav>
+                <ul id="menuList">
+                    <li><a href="">home</a>  </li>
+                    <li><a href="">About</a>  </li>
+                    <li><a href="">Contact</a> </li>
+                    <li><a href="">Blog</a>  </li>
+                </ul>
+            </nav>
+
+            <img src="img/li.png" alt="" class="nav" onclick="togglemenu()">
+
+        </div>
+
+        <div class="row">
+            <div class="col-1">
+
+                <h2>
+                    We are the best
+                </h2>
+                <h3>
+                    We are capable
+                </h3>
+                <p>Lorem ipsum, dolor sit     
+                </p>
+
+                <button type="button">
+                    shop now 
+                    <img src="img/li.png" alt="" >
+                </button>
+
+            </div>
+
+            <div class="col-2">
+                <img src="img/Designer _Outline.png" class="controller" alt="">
+            </div>
+
+        </div>
+
+        <div class="social">
+            <img src="img/instagram.png" alt="">
+            <img src="img/facebook.png" alt="">
+            <img src="img/youtube.png" alt="">
+        </div>
+    </div>
+
+    <script>
+
+        var menuList= document.getElementById("menuList");
+
+        menuList.style.maxHeight = "0px";
+
+        function togglemenu(){
+            if(menuList.style.maxHeight == "0px"){
+                menuList.style.maxHeight= "130px";
+            }
+            else{
+                menuList.style.maxHeight="0px";
+            }
+        }
+    </script>
+
+</body>
+</html>
